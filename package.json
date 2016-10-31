@@ -1,0 +1,25 @@
+{
+  "name": "vanilla_todo",
+  "version": "1.0.0",
+  "description": "Using Vanilla JS to create a simple to do app.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardjboothe/vanillaTodo.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "practiceApp",
+    "Node"
+  ],
+  "author": "Richard Boothe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardjboothe/vanillaTodo/issues"
+  },
+  "homepage": "https://github.com/richardjboothe/vanillaTodo#readme"
+}
