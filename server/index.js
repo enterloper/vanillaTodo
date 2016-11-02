@@ -1,16 +1,24 @@
 "use strict";
 let express    = require('express');
 let bodyParser = require('body-parser');
-let morgan     = require('morgan')
+let mongoose	 = require('mongoose');
+let morgan     = require('morgan');
 let app        = express();
 let router     = express.Router();
 let API        = require('./routes/APIRouter');
+
+//mongodb connection
+mongoose.connect("mongodb://localhost:4545/notebook");
+// variable for the above connection using the connection property on the mongoose object
+let db = mongoose.connection;
+//error handling for mongodb
+db.on('error', console.error.bind(console, 'connection error:'));
 
 //MIDDLEWARE
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(morgan('dev',{
-  // only log error responses 
+  // only log error responses
   // skip: function (req, res) { return res.statusCode < 400; }
 }));
 
