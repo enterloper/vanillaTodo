@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Vanilla To Do</title>
-	<style type="text/css" src="./style/main.css" media="screen"></style>
-</head>
-<body>
-	<div id="main_container">
-		<header id="main_header">
-			<h1>To Do!</h1>
-		</header>
-		<div id="">
-			<div id="">
-				
-			</div>
-		</div>
-		<div>
-			
-		</div>
-	</div>
-	<script src="/main.js" type="text/javascript" charset="utf-8"></script>
-</body>
+  <head>
+    <title>Todo App</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/main.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label><input id="new_task" type="text"><button id="add_task">Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete_tasks">
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed_tasks">
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="src/app.js"></script>
+
+  </body>
 </html>
